@@ -33,6 +33,7 @@ Raspberry Pi 4 ModelB
 | EAT    | 19   |
 | BIT    | 26   |
 | ブザー | 25   |
+| GND | 39   |
 ***
 
 ## 参考資料
@@ -49,10 +50,11 @@ make
 ```
 ***
 ## 回路
-回路写真
+### 回路写真
 ![iOS の画像](https://user-images.githubusercontent.com/70883743/145702406-2623b50e-9325-4354-bf59-5bf592327433.jpg)
-回路図
-![Untitled Sketch_回路図](https://user-images.githubusercontent.com/70883743/145714734-bdcc1539-9d33-47c5-8dee-3f0d93f2049a.jpg)
+### 回路図
+![Untitled Sketch_回路図](https://user-images.githubusercontent.com/70883743/145714838-c7d1596f-1462-453d-913c-44175b84a1c5.png)
+
 
 
 ***
