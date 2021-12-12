@@ -50,9 +50,11 @@ make
 ***
 ## 回路
 回路写真
-![iOS の画像](https://user-images.githubusercontent.com/70883743/145702406-2623b50e-9325-4354-bf59-5bf592327433.jpg width="100px")
+![iOS の画像](https://user-images.githubusercontent.com/70883743/145702406-2623b50e-9325-4354-bf59-5bf592327433.jpg)
 回路図
-[kairo20211212.pdf](https://github.com/bato1015/robosys2021_led/files/7698829/kairo20211212.pdf)
+![Untitled Sketch_回路図](https://user-images.githubusercontent.com/70883743/145714734-bdcc1539-9d33-47c5-8dee-3f0d93f2049a.jpg)
+
+
 ***
 ## ゲーム詳細
 ### 条件
