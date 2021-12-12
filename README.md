@@ -4,7 +4,7 @@
 に機能を追記し、作成しました。
 ***
 ## 機能
-ヌメロンを作成しました。1~9の重複を含まない三桁がランダムび生成されます。入力された数字を<a href="http://pumpkin.cool-biz.net/Numer0n/futari_rule.html">ルール</a>に沿って判定し、EATは緑、BITEは黄色が当たった回数分光ります。アイテムカードは実装していません。
+ヌメロンを作成しました。1~9の重複を含まない三桁がランダムに生成されます。入力された数字を<a href="http://pumpkin.cool-biz.net/Numer0n/futari_rule.html">ルール</a>に沿って判定し、EATは緑、BITEは黄色が当たった回数分光ります。アイテムカードは実装していません。
 ***
 
 ## 動作環境
@@ -48,6 +48,9 @@ make
 ./numeron.c
 ```
 ***
+##回路
+
+***
 ## ゲーム詳細
 ### 条件
 ・設定された数字と位置が同じであればEAT(黄色ランプ)
@@ -71,8 +74,8 @@ make
 4. [giv]と入力すると設定された3桁の数字が表示され、終了処理が開始される。
 ***
 ## 動画
-
-<a href="https://www.youtube.com/watch?v=QOLWAXEHlSw">提出用ビデオ</a>
+<a href="https://www.youtube.com/watch?v=-Vimi_2r2gI">提出用ビデオ</a>
+***
 ## ライセンス
 <a href="https://github.com/bato1015/robosys2021_led/blob/main/LICENSE">GNU General Public License v3.0</a>
 
