@@ -48,7 +48,8 @@ make
 ./numeron.c
 ```
 ***
-##回路
+## 回路
+  回路写真
 ![iOS の画像](https://user-images.githubusercontent.com/70883743/145702406-2623b50e-9325-4354-bf59-5bf592327433.jpg)
 ***
 ## ゲーム詳細
