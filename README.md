@@ -53,6 +53,7 @@ make
 ### 回路写真
 ![iOS の画像](https://user-images.githubusercontent.com/70883743/145702406-2623b50e-9325-4354-bf59-5bf592327433.jpg)
 ### 回路図
+Raspberry Pi 4の回路データがなかったため、Raspberry Pi 3で代用
 ![Untitled Sketch_回路図](https://user-images.githubusercontent.com/70883743/145714838-c7d1596f-1462-453d-913c-44175b84a1c5.png)
 
 
