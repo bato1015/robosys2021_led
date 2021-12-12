@@ -72,7 +72,7 @@ make
 ***
 ## 動画
 
-<a href="https://www.youtube.com/watch?v=QOLWAXEHlSw">提出用動画</a>
+<a href="https://www.youtube.com/watch?v=QOLWAXEHlSw">提出用ビデオ</a>
 ## ライセンス
 <a href="https://github.com/bato1015/robosys2021_led/blob/main/LICENSE">GNU General Public License v3.0</a>
 

@@ -1,4 +1,5 @@
 //SPDX - License - Identifier : GPL - 3.0
+//*Copyright (c) 2021 Ryuichi Ueda and RikoBato. All rights reserved.
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -66,12 +67,11 @@ int main()
     {
         B = 0;
         E = 0;
-	printf("数字を入力してください:");
         scanf("%c%c%c", &user[0], &user[1], &user[2]);
         if (user[0] == 'g' || user[1] == 'i' || user[2] == 'v')
         {
             system("echo s> /dev/myled0");
-            printf("answer=");
+            printf("answer==");
             for (int i = 0; i < 3; i++)
                 printf("%c", array[i]);
             printf("\n");
@@ -80,7 +80,7 @@ int main()
         else if (user[0] == 'h' || user[1] == 'l' || user[2] == 'p')
             printf("%c**\n", array[0]);
         game(array, user);
-       // printf("%d,%d\n", E, B);
+        printf("%d,%d\n", E, B);
         set();
         if (E == 3)
         {
@@ -90,6 +90,5 @@ int main()
         }
         scanf("%c", &space);
     }
-    system("sudo rmmod myled");
     return 0;
 }
