@@ -13,12 +13,15 @@ MODULE_AUTHOR("Ryuichi Ueda and Riko Bato");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
+
 static dev_t dev;
 static struct cdev cdv;
 static struct class *cls = NULL;
 static volatile u32 *gpio_base = NULL; //アドレスをマッピングするための配列をグローバルで定義している
+
 int gpio[] = {26, 19, 25};
 int led_long = 150, bzar_long = 100, sos_long = 300;
+
 void led_T(int gpio_num, int right_count, int long_time)
 {
     int i;
@@ -30,6 +33,7 @@ void led_T(int gpio_num, int right_count, int long_time)
         msleep(100);
     }
 }
+
 void hantei(int mode, int count_num)
 {
     if (mode == 1)
@@ -39,6 +43,7 @@ void hantei(int mode, int count_num)
     else if (mode == 3)
         led_T(gpio[2], 2, bzar_long);
 }
+
 void sos_bzar(int a)
 {
     a = 0;
@@ -46,6 +51,7 @@ void sos_bzar(int a)
     led_T(gpio[2], 3, sos_long);
     led_T(gpio[2], 3, bzar_long);
 }
+
 void clear(int a)
 {
     a = 0;
@@ -58,6 +64,7 @@ void clear(int a)
     gpio_base[7] = 1 << gpio[1];
     msleep(sos_long);
 }
+
 static ssize_t led_write(struct file *filp, const char *buf, size_t count, loff_t *pos)
 {
     char c;
@@ -105,10 +112,12 @@ static ssize_t sushi_read(struct file *filp, char *buf, size_t count, loff_t *po
     size += sizeof(sushi);
     return size;
 }
+
 static struct file_operations led_fops = {
     .owner = THIS_MODULE,
     .write = led_write,
     .read = sushi_read};
+
 static int __init init_mod(void)
 {
     int retval;
@@ -145,6 +154,7 @@ static int __init init_mod(void)
     }
     return 0;
 }
+
 static void __exit cleanup_mod(void)
 {
     cdev_del(&cdv);
