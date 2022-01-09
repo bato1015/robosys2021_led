@@ -17,6 +17,7 @@ void shuffle(char array[], int size)
         array[j] = t;
     }
 }
+
 void game(char user[], char rdom[])
 {
     for (int i = 0; i < 3; i++)
@@ -33,6 +34,7 @@ void game(char user[], char rdom[])
         }
     }
 }
+
 void set()
 {
     if (E == 0 && B == 0)
@@ -51,6 +53,7 @@ void set()
     else if (B == 3)
         system("echo c> /dev/myled0");
 }
+
 int main()
 {
     char space;
